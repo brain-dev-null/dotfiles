@@ -7,6 +7,8 @@ order += "wireless _first_"
 order += "disk /"
 order += "battery all"
 order += "tztime local"
+order += "path_exists VPN"
+order += "read_file hostname"
 
 wireless _first_ {
 	format_up = "󰤨 "
@@ -18,7 +20,9 @@ tztime local {
 }
 
 disk "/" {
-        format = "%avail"
+        format = " %percentage_used"
+	prefix_type = "decimal"
+	low_threshold = "10"
 }
 
 battery all {
@@ -26,4 +30,15 @@ battery all {
         status_chr = "󱐋"
         status_bat = "󰁾"
         status_full = "󰁹 "
+}
+
+read_file hostname {
+	format = "%content"
+	path = "/etc/hostname"
+}
+
+path_exists VPN {
+	format = "VPN  "
+	format_down = "VPN  "
+	path = "/sys/class/net/tun0"
 }

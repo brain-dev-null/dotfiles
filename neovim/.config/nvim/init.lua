@@ -172,6 +172,7 @@ require('lazy').setup({
     'lukas-reineke/indent-blankline.nvim',
     -- Enable `lukas-reineke/indent-blankline.nvim`
     -- See `:help indent_blankline.txt`
+    version = '2.20.8',
     opts = {
       char = '┊',
       show_trailing_blankline_indent = false,
@@ -542,6 +543,11 @@ require('lint').linters_by_ft = {
   yaml = {'vacuum',},
   yml = {'vacuum',},
 }
+
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

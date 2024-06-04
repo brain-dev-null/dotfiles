@@ -1,0 +1,28 @@
+import = [
+    # "~/.config/alacritty/colorschemes/catppuccin-latte.toml"
+    # "~/.config/alacritty/colorschemes/catppuccin-frappe.toml"
+    "~/.config/alacritty/colorschemes/catppuccin-macchiato.toml"
+    # "~/.config/alacritty/colorschemes/catppuccin-mocha.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 13
+
+[font.bold]
+family = "DejaVuSansM Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "DejaVuSansM Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "DejaVuSansM Nerd Font"
+style = "Regular"
+
+[shell]
+args = ["-l", "-c", "tmux attach || tmux"]
+program = "/usr/bin/zsh"

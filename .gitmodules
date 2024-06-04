@@ -1,0 +1,18 @@
+[submodule "zsh/.config/zsh-plugins/zsh-git-prompt"]
+	path = zsh/.config/zsh-plugins/zsh-git-prompt
+	url = https://github.com/olivierverdier/zsh-git-prompt
+[submodule "zsh/.zsh/themes/spaceship-prompt"]
+	path = zsh/.zsh/themes/spaceship-prompt
+	url = git@github.com:spaceship-prompt/spaceship-prompt.git
+[submodule "zsh/.zsh/plugins/zsh-autosuggestions"]
+	path = zsh/.zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh/.zsh/plugins/zsh-syntax-highlighting"]
+	path = zsh/.zsh/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "zsh/.zsh/plugins/zsh-completions"]
+	path = zsh/.zsh/plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions
+[submodule "alacritty/alacritty"]
+	path = alacritty/alacritty
+	url = https://github.com/catppuccin/alacritty

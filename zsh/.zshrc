@@ -38,6 +38,7 @@ alias note=$CUSTOM_SCRIPTS/edit_daily_note.sh
 alias kk=$CUSTOM_SCRIPTS/kube.sh
 alias kkw="$CUSTOM_SCRIPTS/kube.sh -w"
 alias goodnight="$CUSTOM_SCRIPTS/goodnight.sh"
+alias mkuid="python -c \"from uuid import uuid4; print(uuid4(), end='')\" | xclip -i -selection c"
 
 # == P.S ==
 

@@ -1,0 +1,6 @@
+[include]
+    path = ".gitcfg/user.git.config" # Use this for secret / host-specific config
+[include]
+    path = ".gitcfg/global.git.config"
+[include]
+    path = ".gitcfg/aliases.git.config"

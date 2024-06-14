@@ -14,7 +14,9 @@ export EDITOR=nvim
 # == Plugins ==
 
 ## zsh-completions
-fpath=($ZSH/plugins/zsh-completions/zsh-completions.plugin.zsh $fpath)
+fpath+=$ZSH/plugins/zsh-completions/zsh-completions.plugin.zsh
+fpath+=$ZSH/completions/_poetry
+
 
 ## zsh-autosuggestions
 source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -25,6 +27,9 @@ source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ## auto-activate python virtual environments
 source $ZSH/plugins/custom/venv-activate.sh
+
+## fetch gitignore.io via gi
+source $ZSH/plugins/custom/gitignore.io.sh
 
 # == Remapts ==
 
